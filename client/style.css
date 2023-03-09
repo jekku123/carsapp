@@ -8,53 +8,111 @@ body {
   font-family: "Golos Text", sans-serif;
 }
 
-h1 {
-  margin-bottom: 25px;
+.btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+  box-shadow: none;
+}
+
+label {
+  display: inline-block;
+  width: 70px;
+}
+
+input {
+  height: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: none;
+}
+
+header {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
+  display: flex;
+  justify-content: center;
   padding: 20px;
+  gap: 2rem;
 }
 
-table {
-  border-collapse: collapse;
-  margin: 10px 0px;
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
+
+fieldset {
+  padding: 25px;
+  border-radius: 10px;
+}
+
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.cars-form .input-container {
+  margin-bottom: 10px;
+}
+
+.search-area {
+  display: flex;
+}
+
+.search-btn {
+  height: 25px;
+  margin-left: 10px;
+}
+
+/* CARS TABLE */
+
+.cars-table {
+  margin-top: 15px;
+  width: 600px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+/* TABLES */
 
 td,
 th {
   border: 1px solid black;
   text-align: left;
   padding: 5px;
+  overflow: hidden;
 }
 
-label {
-  display: inline-block;
-  min-width: 70px;
+thead {
+  background-color: rgb(90, 89, 89);
+  color: white;
 }
 
-input {
-  padding: 5px;
-  height: 25px;
-  border-radius: 5px;
-  border: 1px solid black;
+tbody tr {
+  background-color: rgb(255, 255, 255);
 }
 
-.btn {
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: 1px solid black;
-  margin: 10px 0px;
+tr:nth-child(2n) {
+  background-color: rgb(222, 222, 222);
 }
 
-.input-field {
-  margin: 10px 0px;
+ul {
+  list-style: none;
 }
 
-.search-area {
-  display: none;
+li {
+  margin: 10px;
 }
 
-.search-area.active {
-  display: block;
+li span {
+  font-weight: bold;
 }

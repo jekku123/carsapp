@@ -4,7 +4,10 @@
   "description": "",
   "main": "carserver.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon server.js"
+  },
+  "nodemonConfig": {
+    "ignore": "./storage/cars.json"
   },
   "keywords": [],
   "author": "",

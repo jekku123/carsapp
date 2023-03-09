@@ -1,0 +1,22 @@
+[
+  {
+    "licence": "heheheo",
+    "maker": "jj",
+    "model": "jkj",
+    "owner": "ijj",
+    "price": "3443",
+    "color": "jkn",
+    "discount": "344.30",
+    "discountedPrice": "3098.70"
+  },
+  {
+    "licence": "BAC-123",
+    "maker": "KEKE",
+    "model": "koko",
+    "owner": "koko",
+    "price": "343434",
+    "color": "koko",
+    "discount": "68686.80",
+    "discountedPrice": "274747.20"
+  }
+]
