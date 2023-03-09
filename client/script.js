@@ -1,5 +1,6 @@
 import Car from "./classes/Car.js";
 import { insertRows } from "./utils/tableHandler.js";
+import { formatToCurrency } from "./utils/formatToCurrency.js";
 import {
   fetchPostRequest,
   fetchGetRequest,
@@ -26,7 +27,7 @@ import {
         maker,
         model,
         owner,
-        price,
+        price: formatToCurrency(price),
         color,
       };
 
@@ -67,12 +68,22 @@ import {
 
     if (!car.error) {
       searchResultsArea.innerHTML = `<ul id="search-results-list">
-        <li>Maker: <span class="search-result">${car.maker}</span></li>
-        <li>Owner: <span class="search-result">${car.owner}</span></li>
-        <li>Model: <span class="search-result">${car.model}</span></li>
-        <li>Discount: <span class="search-result">${car.discount}</span></li>
+        <li>Maker: <span class="search-result">${
+          car.maker
+        }</span></li>
+        <li>Owner: <span class="search-result">${
+          car.owner
+        }</span></li>
+        <li>Model: <span class="search-result">${
+          car.model
+        }</span></li>
+        <li>Discount: <span class="search-result">${formatToCurrency(
+          car.discount
+        )}</span></li>
         <li>
-          Discounted price: <span class="search-result">${car.discountedPrice}</span>
+          Discounted price: <span class="search-result">${formatToCurrency(
+            car.discountedPrice
+          )}</span>
         </li>
       </ul>`;
     } else {
