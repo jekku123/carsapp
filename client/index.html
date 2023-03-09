@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>Car App</h1>
+      <div class="form-container">
+        <form>
+          <div class="input-field">
+            <label for="licence">Licence:</label>
+            <input type="text" id="licence" name="licence" />
+          </div>
+          <div class="input-field">
+            <label for="maker">Maker:</label>
+            <input type="text" id="maker" name="maker" />
+          </div>
+          <div class="input-field">
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" />
+          </div>
+          <div class="input-field">
+            <label for="owner">Owner:</label>
+            <input type="text" id="owner" name="owner" />
+          </div>
+          <div class="input-field">
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" />
+          </div>
+          <div class="input-field">
+            <label for="color">Color:</label>
+            <input type="text" id="color" name="color" />
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <div class="cars-table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Licence</th>
+              <th>Maker</th>
+              <th>Model</th>
+              <th>Owner</th>
+              <th>Price</th>
+              <th>Color</th>
+            </tr>
+          </thead>
+          <tbody id="cars-results"></tbody>
+        </table>
+      </div>
+      <div class="search-area-container">
+        <div class="search-controls">
+          <label for="search">Search with licence:</label>
+          <input type="text" id="searchInput" name="search" />
+          <button type="button" class="btn" id="search-btn">Search</button>
+        </div>
+        <div class="search-area">
+          <table>
+            <thead>
+              <tr>
+                <th>Maker</th>
+                <th>Owner</th>
+                <th>Model</th>
+              </tr>
+            </thead>
+            <tbody id="search-results"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

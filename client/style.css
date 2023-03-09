@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Golos Text", sans-serif;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+main {
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 10px 0px;
+}
+
+td,
+th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 5px;
+}
+
+label {
+  display: inline-block;
+  min-width: 70px;
+}
+
+input {
+  padding: 5px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 10px 0px;
+}
+
+.input-field {
+  margin: 10px 0px;
+}
+
+.search-area {
+  display: none;
+}
+
+.search-area.active {
+  display: block;
+}
