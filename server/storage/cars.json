@@ -1,5 +1,15 @@
 [
   {
+    "licence": "KEK-99",
+    "maker": "SuperCar",
+    "model": "SUPERGT",
+    "owner": "Liz Lizzie",
+    "price": "599999.99",
+    "color": "Black",
+    "discount": 120000,
+    "discountedPrice": 479999.99
+  },
+  {
     "licence": "GG-99",
     "maker": "Fiat",
     "model": "127",
