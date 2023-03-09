@@ -81,13 +81,6 @@ import {
     }
   };
 
-  function function1() {
-    var ul = document.getElementById("list");
-    var li = document.createElement("li");
-    li.appendChild(document.createTextNode("Four"));
-    ul.appendChild(li);
-  }
-
   document.addEventListener("DOMContentLoaded", init);
 
   function init() {
