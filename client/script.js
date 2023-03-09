@@ -50,8 +50,8 @@ import {
       owner,
       price,
       color,
-      discount: (price - car.discount()).toFixed(2),
-      discountedPrice: car.discount().toFixed(2),
+      discount: +(price - car.discount()).toFixed(2),
+      discountedPrice: +car.discount().toFixed(2),
     });
 
     carFormInputs.forEach((input) => (input.value = ""));
@@ -80,6 +80,13 @@ import {
       searchInput.value = "";
     }
   };
+
+  function function1() {
+    var ul = document.getElementById("list");
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode("Four"));
+    ul.appendChild(li);
+  }
 
   document.addEventListener("DOMContentLoaded", init);
 
