@@ -1,52 +1,32 @@
 [
   {
-    "licence": "koko",
-    "maker": "koko",
-    "model": "koko",
-    "owner": "ko",
-    "price": "344334",
-    "color": "koko",
-    "discount": 68866.8,
-    "discountedPrice": 275467.2
-  },
-  {
-    "licence": "KOKO",
-    "maker": "kmdkjdfkjn",
-    "model": "njnkj",
-    "owner": "njknjk",
-    "price": "545454",
-    "color": "nkjnjk",
-    "discount": 109090.8,
-    "discountedPrice": 436363.2
-  },
-  {
-    "licence": "GG-200",
-    "maker": "FancyCars",
-    "model": "Very Nice",
-    "owner": "Timo Penttinen",
-    "price": "299999",
-    "color": "Golden",
-    "discount": "59999.80",
-    "discountedPrice": "239999.20"
-  },
-  {
-    "licence": "LOL-99",
+    "licence": "GG-99",
     "maker": "Fiat",
-    "model": "Punto",
-    "owner": "Matt Franco",
-    "price": "2999",
+    "model": "127",
+    "owner": "Matt Lorenz",
+    "price": "1000",
+    "color": "Turquoise",
+    "discount": 100,
+    "discountedPrice": 900
+  },
+  {
+    "licence": "LOL-555",
+    "maker": "Ferrari",
+    "model": "360 Modena",
+    "owner": "Richo Bastardoso",
+    "price": "399999",
     "color": "Red",
-    "discount": "299.90",
-    "discountedPrice": "2699.10"
+    "discount": 79999.8,
+    "discountedPrice": 319999.2
   },
   {
     "licence": "ABC-123",
     "maker": "Mazda",
     "model": "626",
     "owner": "Frank Walters",
-    "price": "1000",
+    "price": "2999",
     "color": "Blue",
-    "discount": "100.00",
-    "discountedPrice": "900.00"
+    "discount": 299.9,
+    "discountedPrice": 2699.1
   }
 ]
