@@ -16,12 +16,9 @@ import {
     const cars = await fetchGetRequest(
       `http://localhost:1337/getcars`
     );
-
     carsTableBody.textContent = "";
-
     cars.forEach((car) => {
       const { licence, maker, model, owner, price, color } = car;
-
       const parsedCarData = {
         licence,
         maker,
@@ -30,20 +27,16 @@ import {
         price: formatToCurrency(price),
         color,
       };
-
       insertRows(parsedCarData, carsTableBody);
     });
   };
 
   const setCar = (e) => {
     e.preventDefault();
-
     const [licence, maker, model, owner, price, color] = [
       ...carFormInputs,
     ].map((input) => input.value);
-
     const car = new Car(licence, maker, model, owner, price, color);
-
     fetchPostRequest(`http://localhost:1337/setcar`, {
       licence,
       maker,
@@ -54,9 +47,7 @@ import {
       discount: +(price - car.discount()).toFixed(2),
       discountedPrice: +car.discount().toFixed(2),
     });
-
     carFormInputs.forEach((input) => (input.value = ""));
-
     updateCarsTable();
   };
 
@@ -65,7 +56,6 @@ import {
     const car = await fetchGetRequest(
       `http://localhost:1337/getcar?licence=${searchParams}`
     );
-
     if (!car.error) {
       searchResultsArea.innerHTML = `<ul id="search-results-list">
         <li>Maker: <span class="search-result">${
