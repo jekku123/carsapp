@@ -1,5 +1,15 @@
 [
   {
+    "licence": "KOK-66",
+    "maker": "SUPERCAR",
+    "model": "MEGA",
+    "owner": "Dude Duders",
+    "price": 49999.99,
+    "color": "Silver",
+    "discount": 10000,
+    "discountedPrice": 39999.99
+  },
+  {
     "licence": "KEK-99",
     "maker": "SuperCar",
     "model": "SUPERGT",
