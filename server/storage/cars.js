@@ -21,7 +21,7 @@ function getCar(req, res) {
 function setCar(req, res) {
   const newCar = req.body;
   const cars = JSON.parse(readFileSync(path));
-  if (!cars.find((car) => car.licence === newCar.licence)) {
+  if (!cars.some((car) => car.licence === newCar.licence)) {
     try {
       writeFileSync(
         path,
