@@ -21,7 +21,7 @@ Built with:
 
 ## Setup and usage
 
-Needs to be run locally, so pull from github and run "npm install" in carsapp root to install depencies.Then cd into server folder and run server by running command "node server.js" and start index.js from client folder in VS code live server.
+Needs to be run locally, so pull from github and run "npm install" in the server folder, then start the server by running command "node server.js" still in server folder. Finally open index.js from client folder in VS code live server.
 
 ## Authors and acknowledgment
 
